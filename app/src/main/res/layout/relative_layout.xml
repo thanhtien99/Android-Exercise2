@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/anh4" />
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mImage"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonLearn"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LEARN" />
+
+        <Button
+            android:id="@+id/buttonPractice"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonLearn"
+            android:layout_marginTop="20dp"
+            android:text="PRACTICE" />
+
+        <Button
+            android:id="@+id/buttonTest"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonPractice"
+            android:layout_marginTop="20dp"
+            android:text="TEST" />
+        <Button
+            android:id="@+id/buttonBackLinner"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonTest"
+            android:layout_marginTop="20dp"
+            android:text="Tro lai LinnerLayout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mRelativeLayout2"
+        android:layout_marginTop="70dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/manh1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/anh3" />
+        <ImageView
+            android:id="@+id/manh2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anh1"
+            android:layout_toLeftOf="@+id/manh1"/>
+        <ImageView
+            android:id="@+id/manh3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/manh2"
+            android:src="@drawable/anh2" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
